@@ -17,22 +17,29 @@ H 3
 
 
 def count_letters(text):
-    # 將文字轉換為大寫
-    text = text.upper()
     letter_count = {}
+    # 將文字中的空白字元去除
+    text = text.replace(" ", "")
+    # 將文字轉換為大寫
+    upper_text = text.upper()
     # 將字母加入字典，如果不存在則加入新的字母並設置為1
-    for char in text:
+    for char in upper_text:
         if char.isalpha():
             letter_count[char] = letter_count.get(char, 0) + 1
-    
+
     return letter_count
 
 def main():
     text = "Hello welcome to Cathay 60th year anniversary"
     letter_count = count_letters(text)
-    for letter, count in letter_count.items():
+    
+    # 加入 0 和 6 這兩個字元到字母計算中
+    for char in "06":
+        letter_count[char] = text.count(char)
+    
+    # 使用 sorted 函式進行排序
+    for letter, count in sorted(letter_count.items()):
         print(f"{letter} {count}")
-
 
 if __name__ == "__main__":
     main()
