@@ -1,3 +1,5 @@
+"""此Python 自動化測試腳本，專門用於自動執行Android手機上的 Chrome App 測試任務。測試目標是進入國泰世華銀行官網，點擊操作，截圖並計算停發信用卡的數量。"""
+
 from appium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
