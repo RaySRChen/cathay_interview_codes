@@ -1,4 +1,4 @@
-# README file for cath_bank_automation_test_for_Android.py
+# README file for cathay_bank_automation_test_for_Android.py
 
 This automated test script is specifically designed for performing automated tests on the Chrome App with the Cathay Bank website. The script is written in Python and uses the Appium testing framework to simulate user interactions and execute test scenarios while recording the results. This README file provides a detailed explanation of the script, including its features, system requirements, installation instructions, and usage guidelines.
 
